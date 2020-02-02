@@ -11,7 +11,7 @@
 
 <html>
     <head>
-        <title>Blood Donation Records | Login</title>
+        <title>  Login</title>
 
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -21,7 +21,7 @@
     <body id="grad">
         <div class="center-align">
             <div class="shadow-lg p-3 mb-5 bg-white rounded" style="padding: 50px !important">
-                <h3 align="center" style="padding-bottom: 50px">Login</h3>
+                <h3 align="center" style="padding-bottom: 50px">Organization Login</h3>
                 <!-- FORM PROCESSED IN LOGIN.PHP --> 
                 <form action="./login.php" method="POST">
                     <div class="input-group">
