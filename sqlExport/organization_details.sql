@@ -25,32 +25,33 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Table structure for table `organization_details`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE `organization_details` (
   `id` int(11) NOT NULL,
-  `username` varchar(500) NOT NULL,
-  `password` varchar(500) NOT NULL,
-  `type` varchar(500) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `name` varchar(500) NOT NULL,
+  `address` varchar(500) NOT NULL,
+  `email` varchar(500) NOT NULL,
+  `phone` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users`
+-- Dumping data for table `organization_details`
 --
 
-INSERT INTO `users` (`id`, `username`, `password`, `type`) VALUES
-(1, 'winnee', 'winnee', 'admin'),
-(11, 'inbda', 'inbda', 'organization');
+INSERT INTO `organization_details` (`id`, `user_id`, `name`, `address`, `email`, `phone`) VALUES
+(2, 11, 'Inbda', 'mitrapark', 'inbda@gmail.com', '986558449');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `users`
+-- Indexes for table `organization_details`
 --
-ALTER TABLE `users`
+ALTER TABLE `organization_details`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -58,10 +59,10 @@ ALTER TABLE `users`
 --
 
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT for table `organization_details`
 --
-ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+ALTER TABLE `organization_details`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
